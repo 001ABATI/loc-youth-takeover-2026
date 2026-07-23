@@ -1,0 +1,1368 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background:#000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================
+FOOTBALL HERO
+========================================== */
+
+/* ==========================================
+   FOOTBALL HERO
+========================================== */
+
+.football-hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    margin:0;
+
+    padding:0;
+
+}
+
+.football-video{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:1;
+
+}
+
+.football-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.60);
+
+    z-index:2;
+
+}
+
+.football-content{
+
+    position:relative;
+
+    z-index:3;
+
+    max-width:900px;
+
+    width:90%;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.football-content span{
+
+    display:block;
+
+    color:#f5c542;
+
+    letter-spacing:4px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+.football-content h1{
+
+    font-size:70px;
+
+    margin-bottom:25px;
+
+    line-height:1.1;
+
+    transition:opacity .5s ease;
+
+}
+
+.football-content p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#ddd;
+
+    margin-bottom:40px;
+
+}
+
+.football-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.football-buttons a{
+
+    text-decoration:none;
+
+    background:#f5c542;
+
+    color:#000;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.football-buttons a:hover{
+
+    background:#fff;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+WHY TOURNAMENT
+========================================== */
+
+.why-tournament{
+
+padding:120px 8%;
+
+background:#0b0b0b;
+
+}
+
+.section-title{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+margin-bottom:70px;
+
+}
+
+.section-title span{
+
+color:#f5c542;
+
+letter-spacing:4px;
+
+font-weight:bold;
+
+}
+
+.section-title h2{
+
+font-size:50px;
+
+color:white;
+
+margin:20px 0;
+
+}
+
+.section-title p{
+
+color:#ccc;
+
+line-height:1.8;
+
+font-size:18px;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+.why-card{
+
+background:#141414;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.why-card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+border-color:#f5c542;
+
+}
+
+.why-card i{
+
+font-size:55px;
+
+color:#f5c542;
+
+margin-bottom:25px;
+
+}
+
+.why-card h3{
+
+color:white;
+
+margin-bottom:20px;
+
+font-size:25px;
+
+}
+
+.why-card p{
+
+color:#bbb;
+
+line-height:1.8;
+
+}
+
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:35px;
+
+}
+
+/* ==========================================
+TOURNAMENT TIMELINE
+========================================== */
+
+.timeline-section{
+
+padding:120px 8%;
+
+background:#080808;
+
+}
+
+.timeline{
+
+position:relative;
+
+max-width:900px;
+
+margin:70px auto 0;
+
+}
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:35px;
+
+top:0;
+
+bottom:0;
+
+width:4px;
+
+background:#f5c542;
+
+}
+
+.timeline-item{
+
+display:flex;
+
+align-items:flex-start;
+
+gap:30px;
+
+margin-bottom:70px;
+
+position:relative;
+
+}
+
+.timeline-circle{
+
+width:70px;
+
+height:70px;
+
+background:#f5c542;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+color:#000;
+
+z-index:2;
+
+flex-shrink:0;
+
+box-shadow:0 0 25px rgba(245,197,66,.5);
+
+}
+
+.timeline-content{
+
+background:#111;
+
+padding:30px;
+
+border-radius:18px;
+
+width:100%;
+
+transition:.4s;
+
+}
+
+.timeline-content:hover{
+
+transform:translateY(-8px);
+
+border-left:5px solid #f5c542;
+
+}
+
+.timeline-content h3{
+
+color:#f5c542;
+
+margin-bottom:10px;
+
+letter-spacing:2px;
+
+}
+
+.timeline-content h2{
+
+color:white;
+
+margin-bottom:15px;
+
+font-size:30px;
+
+}
+
+.timeline-content p{
+
+color:#ccc;
+
+line-height:1.8;
+
+}
+
+.timeline::before{
+
+left:25px;
+
+}
+
+.timeline-circle{
+
+width:50px;
+
+height:50px;
+
+font-size:20px;
+
+}
+
+.timeline-content h2{
+
+font-size:24px;
+
+}
+
+.timeline-item{
+
+gap:18px;
+
+}
+
+/* ==========================================
+TOURNAMENT INFORMATION
+========================================== */
+
+.tournament-info-section{
+
+padding:120px 8%;
+
+background:#0b0b0b;
+
+}
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.info-card{
+
+background:#111;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.info-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#f5c542;
+
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+.info-card i{
+
+font-size:55px;
+
+color:#f5c542;
+
+margin-bottom:25px;
+
+}
+
+.info-card h3{
+
+color:white;
+
+margin-bottom:20px;
+
+font-size:24px;
+
+}
+
+.info-card p{
+
+color:#bbb;
+
+line-height:1.8;
+
+
+}
+
+.info-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.tournament-quote{
+
+margin-top:80px;
+
+text-align:center;
+
+max-width:800px;
+
+margin-left:auto;
+
+margin-right:auto;
+
+}
+
+.tournament-quote h3{
+
+color:white;
+
+font-size:32px;
+
+font-style:italic;
+
+line-height:1.6;
+
+}
+
+.tournament-quote p{
+
+margin-top:20px;
+
+color:#f5c542;
+
+font-size:20px;
+
+font-weight:bold;
+
+}
+
+/* ==========================================
+TOURNAMENT RULES
+========================================== */
+
+.rules-section{
+
+    padding:120px 8%;
+
+    background:#080808;
+
+}
+
+.rules-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.rule-card{
+
+    background:#111;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.rule-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#f5c542;
+
+    box-shadow:0 20px 35px rgba(0,0,0,.4);
+
+}
+
+.rule-card i{
+
+    font-size:55px;
+
+    color:#f5c542;
+
+    margin-bottom:20px;
+
+}
+
+.rule-card h3{
+
+    color:white;
+
+    margin-bottom:18px;
+
+    font-size:24px;
+
+}
+
+.rule-card p{
+
+    color:#bbb;
+
+    line-height:1.8;
+
+}
+
+.rules-grid{
+
+    grid-template-columns:1fr;
+
+}
+.important-note{
+
+    margin-top:80px;
+
+    background:#111;
+
+    padding:45px;
+
+    border-left:6px solid #f5c542;
+
+    border-radius:18px;
+
+    text-align:center;
+
+}
+
+.important-note i{
+
+    font-size:60px;
+
+    color:#f5c542;
+
+    margin-bottom:20px;
+
+}
+
+.important-note h3{
+
+    color:white;
+
+    margin-bottom:20px;
+
+    font-size:32px;
+
+}
+
+.important-note p{
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================
+FOOTBALL FORM
+========================================== */
+
+.football-registration{
+
+padding:120px 8%;
+
+background:#111;
+
+}
+
+.football-form{
+
+max-width:1100px;
+
+margin:auto;
+
+margin-top:60px;
+
+}
+
+.form-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:25px;
+
+}
+
+.input-box{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.input-box label{
+
+color:white;
+
+margin-bottom:10px;
+
+font-weight:bold;
+
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea{
+
+padding:16px;
+
+border:none;
+
+border-radius:12px;
+
+background:#1c1c1c;
+
+color:white;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.input-box textarea{
+
+margin-top:25px;
+
+resize:none;
+
+}
+
+.checkbox{
+
+display:flex;
+
+gap:12px;
+
+margin:30px 0;
+
+align-items:flex-start;
+
+color:white;
+
+}
+
+.football-form button{
+
+background:#f5c542;
+
+color:black;
+
+padding:18px 45px;
+
+border:none;
+
+border-radius:40px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.football-form button:hover{
+
+background:white;
+
+transform:translateY(-5px);
+
+}
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+/* ==========================================
+FAQ SECTION
+========================================== */
+
+.faq-section{
+
+    padding:120px 8%;
+
+    background:#0b0b0b;
+
+}
+
+.faq-container{
+
+    max-width:900px;
+
+    margin:60px auto 0;
+
+}
+
+.faq-item{
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    background:#111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    text-align:left;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.faq-question:hover{
+
+    background:#181818;
+
+}
+
+.faq-question span{
+
+    font-size:30px;
+
+    color:#f5c542;
+
+    transition:.3s;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .4s ease;
+
+}
+
+.faq-answer p{
+
+    color:#ccc;
+
+    line-height:1.8;
+
+    padding:0 25px 25px;
+
+}
+
+/* ==========================================
+REGISTRATION COUNTDOWN
+========================================== */
+
+.registration-countdown{
+
+padding:120px 8%;
+
+background:#080808;
+
+text-align:center;
+
+}
+
+.registration-countdown span{
+
+color:#f5c542;
+
+letter-spacing:3px;
+
+font-weight:bold;
+
+}
+
+.registration-countdown h2{
+
+font-size:50px;
+
+color:white;
+
+margin:20px 0;
+
+}
+
+.registration-countdown p{
+
+color:#bbb;
+
+margin-bottom:50px;
+
+}
+
+.countdown-boxes{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+margin-bottom:40px;
+
+}
+
+.count-box{
+
+width:150px;
+
+background:#111;
+
+padding:35px;
+
+border-radius:20px;
+
+}
+
+.count-box h1{
+
+font-size:55px;
+
+color:#f5c542;
+
+}
+
+.count-box p{
+
+color:white;
+
+margin-top:10px;
+
+}
+
+.countdown-btn{
+
+display:inline-block;
+
+padding:18px 40px;
+
+background:#f5c542;
+
+color:black;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+.countdown-btn:hover{
+
+background:white;
+
+}
+
+.next-section{
+
+padding:120px 8%;
+
+background:#111;
+
+}
+
+.next-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+margin-top:60px;
+
+}
+
+.next-grid div{
+
+background:#191919;
+
+padding:40px;
+
+text-align:center;
+
+border-radius:20px;
+
+transition:.4s;
+
+}
+
+.next-grid div:hover{
+
+transform:translateY(-10px);
+
+border-bottom:5px solid #f5c542;
+
+}
+
+.next-grid h1{
+
+font-size:60px;
+
+}
+
+.next-grid h3{
+
+color:white;
+
+margin:20px 0;
+
+}
+
+.next-grid p{
+
+color:#bbb;
+
+line-height:1.7;
+
+}
+
+.football-contact{
+
+padding:120px 8%;
+
+background:#0b0b0b;
+
+text-align:center;
+
+}
+
+.contact-buttons{
+
+margin-top:40px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.contact-buttons a{
+
+background:#f5c542;
+
+padding:18px 35px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:black;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+.contact-buttons a:hover{
+
+background:white;
+
+}
+
+
+footer{
+
+padding:60px 8%;
+
+background:black;
+
+text-align:center;
+
+}
+
+footer h2{
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+footer p{
+
+color:#999;
+
+margin:12px 0;
+
+}
+
+footer hr{
+
+margin:30px auto;
+
+max-width:400px;
+
+border-color:#222;
+
+}
+
+@media (max-width:768px){
+
+    /* WHY TOURNAMENT */
+
+    .why-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section-title h2{
+
+        font-size:35px;
+
+    }
+
+    /* TIMELINE */
+
+    .timeline::before{
+
+        left:25px;
+
+    }
+
+    .timeline-circle{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:20px;
+
+    }
+
+    .timeline-content h2{
+
+        font-size:24px;
+
+    }
+
+    .timeline-item{
+
+        gap:18px;
+
+    }
+
+    /* TOURNAMENT INFO */
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* RULES */
+
+    .rules-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* REGISTRATION FORM */
+
+    .form-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* WHAT HAPPENS NEXT */
+
+    .next-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .next-grid div{
+
+        padding:30px;
+
+    }
+
+    .next-grid h1{
+
+        font-size:45px;
+
+    }
+
+    /* CONTACT */
+
+    .contact-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .contact-buttons a{
+
+        width:100%;
+
+        max-width:300px;
+
+        text-align:center;
+
+    }
+
+    /* FOOTBALL HERO */
+
+    .football-content h1{
+
+        font-size:42px;
+
+    }
+
+    .football-content p{
+
+        font-size:17px;
+
+    }
+
+    .football-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .football-buttons a{
+
+        width:100%;
+
+        max-width:300px;
+
+    }
+
+    /* COUNTDOWN */
+
+    .count-box{
+
+        width:120px;
+
+    }
+
+    .count-box h1{
+
+        font-size:40px;
+
+    }
+
+    /* SCRIPTURE */
+
+    .football-scripture blockquote{
+
+        font-size:26px;
+
+    }
+
+}
